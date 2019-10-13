@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "base/colors.scss",
+        "base/typography.scss",
+        "components/buttons.scss",
+        "components/cards.scss",
+        "components/Header.scss",
+        "components/images.scss",
+        "layout/bg.scss",
+        "layout/flex.scss",
+        "pages/AddPost.scss",
+        "pages/Dashboard.scss",
+        "pages/GuestLanding.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
