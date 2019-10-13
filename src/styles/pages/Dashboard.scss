@@ -1,0 +1,49 @@
+// base
+@import "../base/colors.scss";
+@import "../base/typography.scss";
+// layout
+@import "../layout/flex.scss";
+@import "../layout/bg.scss";
+// components
+@import "../components/buttons.scss";
+@import "../components/cards.scss";
+@import "../components/images.scss";
+
+.Dashboard-container {
+  @include bg-full-width;
+  @include flex-column;
+  background-color: $hsg-5;
+  overflow-y: scroll;
+}
+
+.Search-container {
+  display: flex;
+  justify-content: center;
+
+  .Search-form {
+    @include flex-start;
+    @include search-card;
+
+    .Search-input {
+      border: 1px solid #999999;
+      width: 70%;
+      height: 31px;
+    }
+  }
+
+  .Search-btn {
+    @include primary-btn;
+    width: 40px;
+    border: 1px solid $hsg-2;
+    background-color: $hsg-2;
+  }
+
+  .btn {
+    @include primary-btn;
+  }
+}
+
+.Posts-container {
+  @include flex-center;
+  @include flex-column;
+}
