@@ -26,3 +26,10 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+// flex space bt
+@mixin flex-space-bt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

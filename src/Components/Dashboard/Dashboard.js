@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import Header from "../Header/Header";
 import search from "../../images/search_logo.png";
 
 class Dashboard extends Component {
   render() {
     return (
       <div>
+        <Header />
         <div className="Dashboard-container">
           <div className="Search-container">
             <form className="Search-form">

@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=Header.css.map */
+.Header-container {
+  height: 100vh;
+  width: 100px;
+  background-color: pink;
+  position: fixed;
+}
+
+.Header-container .logo {
+  width: 40px;
+  padding: 15px;
+}
+
+.Header-container .top {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-column;
+          flex-direction: flex-column;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  height: 100px;
+}
+
+.Header-container .bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  text-align: center;
+}
+/*# sourceMappingURL=Header.css.map */
