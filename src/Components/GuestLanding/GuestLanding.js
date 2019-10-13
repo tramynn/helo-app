@@ -1,37 +1,45 @@
 import React, { Component } from "react";
-import "../../images/helo_logo.png";
+import logo from "../../images/helo_logo.png";
 
 class GuestLanding extends Component {
   render() {
     return (
       <div className="GuestLanding-container">
         <div className="GuestLanding-card">
-            <img src={`../../images/helo_logo.png`} alt="Helo logo" />
-            <h1>Helo</h1>
-            <form>
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <label>Username:</label>
-                    </td>
-                    <td>
-                      <input placeholder="Enter username.." />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <label>Password:</label>
-                    </td>
-                    <td>
-                      <input placeholder="Enter password.." />
-                    </td>
-                  </tr>
-                  <button>Login</button>
-                  <button>Register</button>
-                </tbody>
-              </table>
-            </form>
+          <div className="GuestLanding-content">
+            <header className="GuestLanding-header">
+              <img src={logo} alt="Helo logo" />
+              <h1 className="GuestLanding-title">Helo</h1>
+            </header>
+            <main>
+              <form>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label>Username:</label>
+                      </td>
+                      <td>
+                        <input placeholder="Enter username.." />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label>Password:</label>
+                      </td>
+                      <td>
+                        <input placeholder="Enter password.." />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div className="Btn-container">
+                  <button className="btn">Login</button>
+                  <button className="btn">Register</button>
+                </div>
+              </form>
+            </main>
+          </div>
         </div>
       </div>
     );

@@ -12,6 +12,7 @@
 .GuestLanding-container {
   @include bg-full-width;
   @include flex-center;
+  @include p-font;
   background: linear-gradient(
     90deg,
     $hsg-1 0%,
@@ -20,9 +21,35 @@
     $hsg-4 100%
   );
   color: #ffffff;
+  text-align: center;
 }
 
 .GuestLanding-card {
   @include login-card;
   background: linear-gradient(90deg, $hsg-1 -30%, $hsg-2 50%, $hsg-3 100%);
+}
+
+td {
+  padding: 10px;
+}
+
+input {
+  border-style: none;
+  border-radius: 2px;
+  width: 140px;
+  height: 25px;
+}
+
+.GuestLanding-title {
+  @include h1-font;
+  padding: 5px 0px;
+}
+
+.Btn-container {
+  @include flex-space-around;
+  padding: 10px;
+
+  .btn {
+    @include primary-btn;
+  }
 }

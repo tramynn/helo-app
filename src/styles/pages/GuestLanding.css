@@ -1,0 +1,98 @@
+.GuestLanding-container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.1618em;
+  letter-spacing: 0.03em;
+  background: -webkit-gradient(linear, left top, right top, from(#ff70a6), color-stop(50%, #ff9770), color-stop(75%, #ffd670), to(#e9ff70));
+  background: linear-gradient(90deg, #ff70a6 0%, #ff9770 50%, #ffd670 75%, #e9ff70 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.GuestLanding-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-column;
+          flex-direction: flex-column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 6px 14px 0px rgba(0, 0, 0, 0.4);
+  width: 35vw;
+  height: 55vh;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-30%, #ff70a6), color-stop(50%, #ff9770), to(#ffd670));
+  background: linear-gradient(90deg, #ff70a6 -30%, #ff9770 50%, #ffd670 100%);
+}
+
+td {
+  padding: 10px;
+}
+
+input {
+  border-style: none;
+  border-radius: 2px;
+  width: 140px;
+  height: 25px;
+}
+
+.GuestLanding-title {
+  font-family: Open Sans, sans-serif;
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 1.1618em;
+  letter-spacing: 0.03em;
+  padding: 5px 0px;
+}
+
+.Btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.Btn-container .btn {
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.1618em;
+  letter-spacing: 0.03em;
+  background-color: #403d39;
+  border: 1px solid #403d39;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  width: 70px;
+  height: 35px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=GuestLanding.css.map */

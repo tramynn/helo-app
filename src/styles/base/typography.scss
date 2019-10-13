@@ -4,6 +4,7 @@ $font-family: Open Sans, sans-serif;
 @mixin h1-font {
   font-family: $font-family;
   font-size: 80px;
+  font-weight: bolder;
   line-height: 1.1618em;
   letter-spacing: 0.03em;
 }
@@ -28,5 +29,5 @@ $font-family: Open Sans, sans-serif;
   font-family: $font-family;
   font-size: 16px;
   line-height: 1.1618em;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }

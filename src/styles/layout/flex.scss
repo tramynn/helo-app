@@ -9,5 +9,12 @@
 @mixin flex-column {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: flex-column;
+}
+
+@mixin flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

@@ -1,0 +1,17 @@
+// base
+@import "../base/colors.scss";
+@import "../base/typography.scss";
+// layout
+@import "../layout/flex.scss";
+
+@mixin primary-btn {
+  @include p-font;
+  background-color: $hsg-6;
+  border: 1px solid $hsg-6;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: white;
+  width: 70px;
+  height: 35px;
+  font-size: 12px;
+}

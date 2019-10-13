@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AGWA,AAAA,uBAAuB,CAAC;EIVtB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EDAb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EHUnB,UAAU,EAAE,0EAMX;EACD,KAAK,EAAE,OAAO;CACf;;AAED,AAAA,kBAAkB,CAAC;EGtBjB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EAKnB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,cAAc,EAAE,WAAW;EGL3B,UAAU,EAAE,UAAU;EACtB,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,kBAAoB;EACjD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;ENgBZ,UAAU,EAAE,+DAA4D;CACzE",
     "sources": [
         "main.scss",
         "pages/AddPost.scss",
@@ -12,6 +12,7 @@
         "layout/bg.scss",
         "components/buttons.scss",
         "components/cards.scss",
+        "layout/flex.scss",
         "components/images.scss"
     ],
     "names": [],

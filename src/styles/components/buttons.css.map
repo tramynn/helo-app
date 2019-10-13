@@ -2,7 +2,10 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "buttons.scss"
+        "buttons.scss",
+        "../base/colors.scss",
+        "../base/typography.scss",
+        "../layout/flex.scss"
     ],
     "names": [],
     "file": "buttons.css"
