@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "cards.scss"
+        "cards.scss",
+        "../layout/flex.scss"
     ],
     "names": [],
     "file": "cards.css"

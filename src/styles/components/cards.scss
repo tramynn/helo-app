@@ -1,0 +1,15 @@
+// layout
+@import "../layout/flex.scss";
+
+@mixin login-card {
+  @include flex-center;
+  @include flex-column;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 2px 6px 14px 0px hsla(0, 0%, 0%, 0.4);
+  width: 35vw;
+  height: 55vh;
+}
+
+@mixin post-card {
+}
