@@ -9,8 +9,9 @@ const { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env;
 
 // Controllers
 const authController = require("./controllers/authController");
-
+const postsController = require("./controllers/postsController");
 const { getUser, register, login, logout } = authController;
+const { getAllPosts, getPostsByTitle, getPostById, addPost } = postsController;
 
 // Middleware
 app.use(express.json());
@@ -38,6 +39,10 @@ app.post("/auth/login", login);
 app.post("/auth/logout", logout);
 
 // Post endpoints
+app.get("/api/posts", getAllPosts);
+app.get("/api/posts/title", getPostsByTitle);
+app.get("/api/post/:post_id", getPostById);
+app.post("/api/posts", addPost);
 
 app.listen(SERVER_PORT, () => {
   console.log(`SERVER LISTENING ON PORT: ${SERVER_PORT}`);
