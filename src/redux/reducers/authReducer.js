@@ -63,7 +63,7 @@ export default function reducer(state = initialState, action) {
         username: payload.data.username
       };
     }
-    case `${LOGOUT_USER}_FULFILLED`: {
+    case `${LOGOUT_USER}`: {
       return {
         user_id: null,
         username: ""

@@ -7,7 +7,12 @@ import GuestLanding from "./Components/GuestLanding/GuestLanding";
 export default (
   <Switch>
     <Route component={GuestLanding} exact path="/" />
-    <Route component={Dashboard} exact path="/dashboard" />
-    <Route component={AddPost} exact path="/addPost" />
+    <Route component={Dashboard} path="/dashboard" />
+    <Route component={AddPost} path="/addPost" />
+    <Route
+      render={() => {
+        return <h1>404 Page Not Found.</h1>;
+      }}
+    />
   </Switch>
 );
