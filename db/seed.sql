@@ -25,3 +25,8 @@ INSERT INTO posts
 (user_id, title, img, content)
 VALUES
 (1, 'Today is a great day', 'https://i.pinimg.com/originals/f2/ce/c9/f2cec98f06e8f66ff0bcfb2ffdb413eb.jpg', 'Heres a pic of a cute happy cat')
+
+-- Get all posts
+SELECT p.*, hu.username FROM posts p
+INNER JOIN helo_user hu
+ON p.user_id = hu.user_id;

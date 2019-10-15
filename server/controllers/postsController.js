@@ -1,5 +1,5 @@
 async function getAllPosts(req, res) {
-  const db = app.req.get("db");
+  const db = req.app.get("db");
   const posts = await db.posts.getAllPosts();
   if (db) {
     res.status(200).json(posts);
@@ -7,7 +7,7 @@ async function getAllPosts(req, res) {
 }
 
 async function getPostsByTitle(req, res) {
-  const db = app.req.get("db");
+  const db = req.app.get("db");
   const { title } = req.query;
 
   const posts = await db.posts.getPostsByTitle(`${title}%`);
@@ -15,7 +15,7 @@ async function getPostsByTitle(req, res) {
 }
 
 async function getPostById(req, res) {
-  const db = app.req.get("db");
+  const db = req.app.get("db");
   const { post_id } = req.params;
 
   const post = await db.posts.getPostById([post_id]);
@@ -23,7 +23,7 @@ async function getPostById(req, res) {
 }
 
 async function addPost(req, res) {
-  const db = app.req.get("db");
+  const db = req.app.get("db");
   const { user_id } = req.session.user;
   const { title, img, content } = req.body;
 
