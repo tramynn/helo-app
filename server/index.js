@@ -40,7 +40,7 @@ app.post("/auth/logout", logout);
 
 // Post endpoints
 app.get("/api/posts", getAllPosts);
-app.get("/api/posts/title", getPostsByTitle);
+app.get("/api/posts/userposts", getPostsByTitle);
 app.get("/api/post/:post_id", getPostById);
 app.post("/api/posts", addPost);
 
