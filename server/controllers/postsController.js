@@ -16,10 +16,10 @@ async function getPostsByTitle(req, res) {
 
 async function getPostById(req, res) {
   const db = req.app.get("db");
-  const { post_id } = req.params;
+  const post_id = +req.params.post_id;
 
-  const post = await db.posts.getPostById([post_id]);
-  res.status(200).json(post);
+  const post = await db.posts.getPostById(post_id);
+  res.status(200).json(post[0]);
 }
 
 async function addPost(req, res) {

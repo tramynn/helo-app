@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getAllPosts, searchPosts } from "../../redux/reducers/postsReducer";
 import { getSession } from "../../redux/reducers/authReducer";
+import { Link } from "react-router-dom";
 import Header from "../Header/Header";
 import search from "../../images/search_logo.png";
 
@@ -38,12 +39,14 @@ class Dashboard extends Component {
 
     let allPosts = posts.map((post, i) => {
       return (
-        <div key={i}>
-          <h1>{post.title}</h1>
-          <img src={post.img} alt="Image" width="300" />
-          <h3>{post.username}</h3>
-          <p>{post.content}</p>
-        </div>
+        <Link to={`/post/${post.post_id}`} style={{ textDecoration: "none" }}>
+          <div key={i}>
+            <h1>{post.title}</h1>
+            <img src={post.img} alt="post" width="300" />
+            <h3>{post.username}</h3>
+            <p>{post.content}</p>
+          </div>
+        </Link>
       );
     });
 
